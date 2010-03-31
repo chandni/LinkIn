@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :chats
 
+  map.resources :comments
+
+  map.resources :chats
+
   map.resource :user_session
   map.resource :account, :controller => "users"
   map.resources :users
